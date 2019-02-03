@@ -3,18 +3,34 @@
 <head>
 	<style>
     body, html {
-      width: 800px;
-      height: 600px;
+      width: 100%;
+      height: 100%;
+    }
+    #pagediv{
+        float: left;
+        width:48%;
+        height:95%;
+        border: 1px solid black;
+    }
+    #consolediv{
+        float: left;
+        width:48%;
+        height:95%;
+        border: 1px solid black;
     }
   </style>
 </head>
 <body>
 
-<p>hi</p>
-<webview id="foo" src="http://www.google.com/" style="width:640px; height:480px"></webview>
+    <div id="pagediv">
+    <webview id="foo" src="http://www.google.com/" style="width:100%; height:100%"></webview>
+    </div>
 
+    <div id="consolediv">
+        <p>hi</p>
+    </div>
 
-
+<script src="content.js"></script>
 
 </body>
 </html>
